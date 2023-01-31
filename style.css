@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Poppins:wght@100;200;300;400;500;600&family=Roboto:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "poppins", sans-serif;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    transition: all 0.4s ease-out;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+section {
+    padding: 3rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.services__bg {
+    background-color: #f3f5fa;
+}
+
+.heading {
+    color: #2e1f27;
+    font-size: 3.5rem;
+    text-align: center;
+    position: relative;
+}
+
+.heading::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 12rem;
+    height: 0.2rem;
+    background: #fff;
+    bottom: 0.1rem;
+    left: calc(50% - 6rem);
+}
+
+.heading::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 4rem;
+    height: 0.3rem;
+    background: #ffae03;
+    bottom: 0;
+    left: calc(50% - 2rem);
+}
+
+.box__container {
+    display: flex;
+    margin-top: 3rem;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.box__container .box {
+    flex: 1 1 23rem;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.box__container .box:hover {
+    transform: translateY(-1rem);
+    cursor: pointer;
+}
+
+.box__container .box:hover h3 {
+    color: #ffae03;
+}
+
+.box__container .box i {
+    color: #ffae03;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.box__container .box h3 {
+    color: #2e1f27;
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+}
+
+.box__container .box p {
+    font-size: 1.3rem;
+    color: #000;
+    opacity: 0.6;
+}
